@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h2>INGRESE EL PASSWORD</h2>
+    <select id="primerDigito">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select id="segundoDigito">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select id="tercerDigito">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <button onclick="
+        digit1 = Number(document.querySelector('#primerDigito option:checked').value)
+        digit2 = Number(document.querySelector('#segundoDigito option:checked').value)
+        digit3 = Number(document.querySelector('#tercerDigito option:checked').value)
+        texto = document.querySelector('.parrafo')
+
+        if(digit1 == 9 & digit2 == 1 & digit3 == 1){
+            texto.innerHTML = 'password 1 correcto'
+        }else if(digit1 == 7 & digit2 == 1 & digit3 == 4){
+            texto.innerHTML = 'password 2 correcto'
+        }else{
+            texto.innerHTML = 'password incorrecto'
+        }
+    ">Ingresar</button>
+    <p class="parrafo"></p>
+
+</body>
+</html>
