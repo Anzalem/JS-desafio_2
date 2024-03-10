@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h3>Puedes llevar hasta 10 stickers en total</h3>
+    <div class="imagenes">
+        <img src="./assets/Img/gratis-png-real-madrid-c-f-fc-barcelona-manchester-united-f-c-logo-realmadrid-s-real-madrid-logo-thumbnail.png" alt="Real madrid">
+        <img src="./assets/Img/Escudo_ac_milan_(1990s).png" alt="Milan">
+        <img src="./assets/Img/ea03764a81ee97b4e5c1e1402a900147.png" alt="Mancity">
+    </div>
+    <div class="entrada">
+        <input class="sticker_1" type="text">
+        <input class="sticker_2" type="text">
+        <input class="sticker_3" type="text">
+    </div>
+    <p class="parrafo">asd</p>
+    <div class="boton">
+        <button onclick="
+            valor1 = Number(document.querySelector('.sticker_1').value)
+            valor2 = Number(document.querySelector('.sticker_2').value)
+            valor3 = Number(document.querySelector('.sticker_3').value) 
+            valorFinal = valor1 + valor2 + valor3
+            texto = document.querySelector('.parrafo')
+            if(valorFinal <= 10){
+                texto.innerHTML = 'llevas ' + valorFinal + ' stickers'
+            }else{
+                texto.innerHTML = 'Llevas demasiados stickers'
+            }
+        ">Verificar</button>
+    </div>
+
+
+
+</body>
+</html>

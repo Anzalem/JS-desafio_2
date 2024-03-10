@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.entrada{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagenes img{
+    width: 20%;
+}
+
+h3{
+    text-align: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    text-align: center;
+}
